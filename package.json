@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/robisemicolon/hambase/issues"
   },
-  "homepage": "https://github.com/robisemicolon/hambase#readme"
+  "homepage": "https://github.com/robisemicolon/hambase#readme",
+  "devDependencies": {
+    "nodemon": "^1.14.3"
+  }
 }
