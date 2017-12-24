@@ -4,7 +4,7 @@
   "description": "Realtime NoSQL Database",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,9 @@
     "url": "https://github.com/robisemicolon/hambase/issues"
   },
   "homepage": "https://github.com/robisemicolon/hambase#readme",
-  "devDependencies": {
-    "nodemon": "^1.14.3"
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.12.2",
+    "print-message": "^2.1.0"
   }
 }
