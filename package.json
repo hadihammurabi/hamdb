@@ -1,0 +1,22 @@
+{
+  "name": "hambase",
+  "version": "1.0.0",
+  "description": "Realtime NoSQL Database",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robisemicolon/hambase.git"
+  },
+  "keywords": [
+    "hambase"
+  ],
+  "author": "Hadi Hidayat Hammurabi <didikipb007@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/robisemicolon/hambase/issues"
+  },
+  "homepage": "https://github.com/robisemicolon/hambase#readme"
+}
