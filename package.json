@@ -1,8 +1,11 @@
 {
   "name": "hambase",
-  "version": "1.0.0",
-  "description": "Realtime NoSQL Database",
+  "version": "2.0.11",
+  "description": "NoSQL Lite Database",
   "main": "index.js",
+  "bin": {
+    "hambase": "./index.js"
+  },
   "scripts": {
     "start": "node index.js"
   },

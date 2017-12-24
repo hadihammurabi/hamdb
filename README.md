@@ -1,2 +1,2 @@
 # hambase
-Realtime NoSQL Database
+NoSQL Lite Database
