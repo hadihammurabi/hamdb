@@ -1,16 +1,19 @@
 #!/usr/bin/env node
 
 const cli = require('commander')
-const env = require('./environment')
+const env = require('./environment')()
 const db  = require('./lib/database')
 const log = require('./lib/logger')
+const errorList = require('./lib/message.list').error()
+const message = require('./lib/message')
+const error = message.error()
 
 cli
-    .version('Hambase@'+env.version)
-    .description('Realtime NoSQL Database')
+    .version(process.hamdb.name+'@' + process.hamdb.version)
+    .description('NoSQL Lite Database')
 
 cli
-    .command('new <database>')
+    .command('new <dbname>')
     .description('Create new database file')
     .action((database)=>{
         db.create(database)
@@ -18,18 +21,31 @@ cli
     })
 
 cli
-    .command('use <database>')
+    .command('use <dbname>')
     .description('Use a database')
     .action((database) => {
         db.use(database)
+        process.exit(0)
     })
 
 cli
-    .command('clear <clear>')
-    .description('Clear any useless ones')
-    .action((clear) => {
-        if(clear == 'log')
-            log.clear()
+    .command('clean <clean>')
+    .description('Clean any useless ones')
+    .action((clean) => {
+        if(clean == 'log') log.clean()
+        else{
+            error(errorList.UNKNOWNPARAMS(clean)).print()
+            log.write(errorList.UNKNOWNPARAMS(clean).message)
+        }
+
+        process.exit(0)
+    })
+
+cli
+    .command('drop <dbname>')
+    .description('Drop an useless database')
+    .action((dbname) => {
+        db.drop(dbname)
 
         process.exit(0)
     })
