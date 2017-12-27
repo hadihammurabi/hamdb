@@ -1,27 +1,27 @@
 {
-  "name": "hambase",
-  "version": "2.0.11",
+  "name": "hamdb",
+  "version": "1.0.0-1",
   "description": "NoSQL Lite Database",
   "main": "index.js",
   "bin": {
-    "hambase": "./index.js"
+    "hamdb": "./index.js"
   },
   "scripts": {
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robisemicolon/hambase.git"
+    "url": "git+https://github.com/robisemicolon/hamdb.git"
   },
   "keywords": [
-    "hambase"
+    "hamdb"
   ],
   "author": "Hadi Hidayat Hammurabi <didikipb007@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/robisemicolon/hambase/issues"
+    "url": "https://github.com/robisemicolon/hamdb/issues"
   },
-  "homepage": "https://github.com/robisemicolon/hambase#readme",
+  "homepage": "https://github.com/robisemicolon/hamdb#readme",
   "dependencies": {
     "colors": "^1.1.2",
     "commander": "^2.12.2",
